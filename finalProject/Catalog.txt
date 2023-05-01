@@ -1,0 +1,100 @@
+Steel Sheets,$49.43,0
+Welding Rods,$76.29,1
+Galvanized Pipes,$46.77,2
+Nuts And Bolts,$94.95,3
+Soldering Wire,$37.27,4
+PVC Pipes,$96.91,5
+Aluminum Sheets,$48.04,6
+Grinding Wheels,$68.39,7
+Electric Motors,$74.01,8
+Safety Gloves,$41.23,9
+Angle Iron,$68.98,10
+Circuit Breakers,$21.72,11
+Chain Hoists,$90.62,12
+Rubber Hoses,$22.44,13
+Sheet Metal Screws,$0.68,14
+Extension Cords,$71.31,15
+Steel Tubing,$93.07,16
+Screwdrivers,$38.71,17
+Abrasive Discs,$40.65,18
+Spray Paint,$6.24,19
+Electrical Tape,$87.96,20
+Hammers,$92.10,21
+Sandpaper,$58.75,22
+Safety Goggles,$83.13,23
+Clamps,$65.94,24
+Wire Strippers,$17.88,25
+Hand Saws,$53.38,26
+Concrete Mix,$52.34,27
+Insulated Gloves,$88.16,28
+Pipe Cutters,$78.36,29
+Jack Stands,$85.87,30
+Safety Vests,$91.00,31
+Steel Bars,$56.71,32
+Cable Ties,$90.34,33
+Drill Bits,$50.07,34
+Socket Sets,$12.91,35
+Welding Helmets,$18.98,36
+Hydraulic Jacks,$89.36,37
+Toolboxes,$26.93,38
+Screw Extractors,$6.52,39
+Tap And Die Sets,$14.73,40
+Torque Wrenches,$48.30,41
+Handheld Metal Detectors,$16.89,42
+Rivet Guns,$73.97,43
+Pipe Wrenches,$1.64,44
+Wire Brushes,$91.75,45
+Levels,$93.64,46
+Safety Cones,$14.20,47
+Saws,$55.54,48
+Hex Keys,$90.61,49
+Ball Bearings,$14.99,50
+Chain Links,$72.92,51
+Magnetic Strips,$41.82,52
+Conduit Fittings,$84.91,53
+Electrical Connectors,$9.62,54
+Cable Connectors,$50.40,55
+Cutting Discs,$77.99,56
+Drill Presses,$8.85,57
+Band Saws,$89.86,58
+Hydraulic Pumps,$47.82,59
+Pneumatic Cylinders,$34.91,60
+Safety Harnesses,$14.09,61
+Load Binders,$60.44,62
+Industrial Lubricants,$53.35,63
+Flange Bearings,$68.95,64
+Paint Brushes,$40.19,65
+Wire Mesh,$77.15,66
+Metal Roofing,$40.01,67
+Glass Cutters,$7.62,68
+Welding Helmets With Air Supply,$57.32,69
+Steel Cable,$58.54,70
+Digital Calipers,$28.06,71
+Industrial Scissors,$95.66,72
+Threaded Rods,$45.99,73
+Magnetic Bases,$33.80,74
+Industrial Glue,$26.24,75
+Industrial Tape,$32.81,76
+Steel Wool,$44.08,77
+Abrasive Belts,$4.02,78
+Grinding Discs,$75.66,79
+Chisels,$86.05,80
+Rasps,$67.37,81
+Industrial Vacuums,$40.38,82
+Carbon Fiber Sheets,$96.33,83
+Steel Strapping,$89.38,84
+Industrial Pumps,$60.83,85
+Dust Masks,$59.69,86
+Welding Blankets,$30.65,87
+Work Lights,$62.54,88
+Shop Vacuums,$89.72,89
+Concrete Sealant,$1.25,90
+Industrial Fans,$93.58,91
+Spray Bottles,$58.32,92
+Extension Poles,$29.57,93
+Caulking Guns,$54.54,94
+Industrial Strength Adhesives,$90.42,95
+Pneumatic Staplers,$79.94,96
+Pneumatic Nail Guns,$59.19,97
+Industrial Magnets,$73.56,98
+Industrial Scale,$12.18,99
