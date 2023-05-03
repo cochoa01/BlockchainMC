@@ -46,17 +46,23 @@ class Node:
             devious = True
         
         totalItems = speed*60
-        with open('D:\VS Code\Class\Blockchain\Catalog.txt', 'r') as file:
-            data = file.readlines()
-            data = [line.strip() for line in data]
+        
+        print(f'Node {self.nodeID} accessing mempool...')
+        mempool = self.getMempool()
 
         DataBlocks = []
         for i in range(0, int(totalItems/10)):
             dataBlock = Data()
             for j in range(0, 10):
-                dataBlock.addTransaction(self.makeTransaction(data[random.randint(0, len(data)-1)]))
+                selection = random.randint(0, len(mempool)-1)
+                
+                dataBlock.addTransaction(self.makeTransaction(mempool[selection]))
+                                         
+                del(mempool[selection])
 
             DataBlocks.append(dataBlock)
+
+        self.setMempool(mempool)
 
         for dataBlock in DataBlocks:
 
@@ -82,8 +88,17 @@ class Node:
     def calculate_hash(self, data):
         return hashlib.sha256(data.encode()).hexdigest()
     
+    def getMempool(self): 
+        with open(r'D:\VS Code\Class\Blockchain\finalProject\mempool.txt', 'r') as file:
+            data = file.readlines()
+            data = [line.strip() for line in data]
+
+        return data
     
-        
+    def setMempool(self, mempool):
+        with open(r'D:\VS Code\Class\Blockchain\finalProject\mempool.txt', 'w') as file:
+            for transaction in mempool:
+                file.write(transaction+'\n')
 
 
             

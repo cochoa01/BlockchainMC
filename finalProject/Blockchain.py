@@ -3,10 +3,12 @@ import datetime
 from Block import *
 from Node import Node
 import sched, time
+import pickle
 
 class Blockchain:
     def __init__(self, nodeID):
         self.chain = [self.create_genesis_block(nodeID)]
+
     def create_genesis_block(self, nodeID):
         header = Header(nodeID, 0,datetime.datetime.now())
         data = Data()
@@ -33,6 +35,8 @@ class Blockchain:
         return len(self.chain)
     
     def getBlock(self, index):
+        if index >= self.getSize():
+            return None
         return self.chain[index]
     
     def __eq__(self, other):
@@ -43,7 +47,7 @@ class DelegatedProofOfStake:
         print('Initializing Delegated Proof of Stake...')
         self.nodes = []
         self.currentMiners = []
-
+        
     def add_node(self, node):
         print(f'Adding node {node.getNodeID()}...')
         self.nodes.append(node)
@@ -86,6 +90,10 @@ class DelegatedProofOfStake:
         #consensus
         self.Consensus()
 
+        print('Saving state...')
+        #saving state
+        self.saveState()
+
         #scheduling the next delegation
         time.sleep(10)
         await self.Delegation()
@@ -111,6 +119,9 @@ class DelegatedProofOfStake:
         for miner in self.currentMiners:
             miner.setBlockChain(longestChain)
 
+        with open(r'D:\VS Code\Class\Blockchain\finalProject\blockChain.pickle', 'wb') as f:
+            pickle.dump(longestChain, f)
+
 
     def getCurrentMiners(self):
         return self.currentMiners
@@ -123,12 +134,10 @@ class DelegatedProofOfStake:
             s1.enter(delay:=delay+10,1,miner.Mine)
 
         s1.run()
-    
-
-
-
-
         
+    def saveState(self):
+        with open(r'D:\VS Code\Class\Blockchain\finalProject\blockState.pickle', 'wb') as f:
+            pickle.dump(self, f)
 
 
 class BlockchainWithDPoS:
